@@ -21,7 +21,7 @@ class MisIconoss extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('Tienda de Mascotas  -  Joselyn Perez Granados 22308051281088')), // Agregado const aquí
+        appBar: AppBar(title: const Text('Joselyn Perez 22308051281088')), // Agregado const aquí
         body: Center( 
           child: Column( 
             mainAxisAlignment: MainAxisAlignment.center,
