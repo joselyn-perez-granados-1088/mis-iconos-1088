@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 //JSOELYN PEREZ GRANADOS MAT:22308051281088
 
 void main() {
-  runApp(const MisIconoss()); // Agregado const aquí
+  runApp(const MisIconoss()); 
 }
 
 class MisIconoss extends StatelessWidget {
-  const MisIconoss({super.key}); // Agregado Key para el constructor const.
+  const MisIconoss({super.key}); 
 
   // Lista de colores pasteles
   static const List<Color> pastelColors = [
-    Color(0xFFFFB6C1), // Light Pink
-    Color(0xFFFFD700), // Pastel Yellow
-    Color(0xFF87CEEB), // Sky Blue
-    Color(0xFF98FB98), // Pastel Green
-    Color(0xFFFFA07A), // Light Salmon
+    Color(0xFFFFB6C1), 
+    Color(0xFFFFD700), 
+    Color(0xFF87CEEB), 
+    Color(0xFF98FB98), 
+    Color(0xFFFFA07A), 
   ];
 
   @override
@@ -22,8 +22,8 @@ class MisIconoss extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Tienda de Mascotas  -  Joselyn Perez Granados 22308051281088')), // Agregado const aquí
-        body: Center( // Eliminado const aquí
-          child: Column( // Eliminado const aquí
+        body: Center( 
+          child: Column( 
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               _buildIconWithSubtitle(Icons.pets, 'Alimentos y accesorios', pastelColors[0]),
@@ -38,17 +38,16 @@ class MisIconoss extends StatelessWidget {
     );
   }
 
-  // Método para construir un ícono con subtítulo
   static Widget _buildIconWithSubtitle(IconData iconData, String subtitle, Color color) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: <Widget>[
-          Icon(iconData, size: 48.0, color: color), // Aplicar color al ícono
-          const SizedBox(height: 8.0), // Agregado const aquí
+          Icon(iconData, size: 48.0, color: color), 
+          const SizedBox(height: 8.0), 
           Text(
             subtitle,
-            style: TextStyle(fontSize: 16.0, color: color), // Aplicar color al texto
+            style: TextStyle(fontSize: 16.0, color: color),
           ),
         ],
       ),
